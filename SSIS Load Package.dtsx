@@ -1,0 +1,2104 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="9/24/2024 5:18:28 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="DESKTOP-GEIGN2C"
+  DTS:CreatorName="DESKTOP-GEIGN2C\AMISI"
+  DTS:DTSID="{BB7A91B3-C6E3-46EB-AB67-132C458C2833}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="16.0.5556.0"
+  DTS:LocaleID="1033"
+  DTS:ObjectName="Project 5 LOAD"
+  DTS:PackageType="5"
+  DTS:VersionBuild="5"
+  DTS:VersionGUID="{9D8F2696-D9E2-4CCA-A9B7-D3B10C41A258}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Hr_ data]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{6F44484A-3E4F-4DD9-99F7-8F326061F71D}"
+      DTS:ObjectName="Hr_ data">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="D:\Data Enginering Projects\Project 5\Clustered HR Data\HR Analytics Data.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;Age"
+              DTS:DTSID="{5F9A67CC-67C8-4D5D-BB4C-294C25865C55}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Attrition"
+              DTS:DTSID="{F9320079-81A7-43A3-A446-4AC233E11D10}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="BusinessTravel"
+              DTS:DTSID="{ABE89A33-6DC0-407C-AF52-78882E2B11A9}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="DailyRate"
+              DTS:DTSID="{2D729E22-FCDD-4994-B703-CC1FB3560C3F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Department"
+              DTS:DTSID="{8FDB3F67-2A66-4C00-9A67-06CB10EA7B29}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="DistanceFromHome"
+              DTS:DTSID="{2122F420-FEEF-461E-B5B9-A669543BF45A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Education"
+              DTS:DTSID="{F89A51E3-B7CC-478D-926F-E4B7C44D354B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="EducationField"
+              DTS:DTSID="{3CBD6D5F-83EE-4AE6-B0D3-33B61AB0861C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="EmployeeCount"
+              DTS:DTSID="{933C86C5-20DB-4983-9123-F606763FB12E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="EmployeeNumber"
+              DTS:DTSID="{5D56C595-A7E8-4F0E-94FE-E7F67C8DE528}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="EnvironmentSatisfaction"
+              DTS:DTSID="{58EF8210-EABF-49A0-8CDB-72F3332434C2}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Gender"
+              DTS:DTSID="{DD53A94D-833B-4728-AD94-65D8D20F9AAB}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="HourlyRate"
+              DTS:DTSID="{F7FE56BE-6FCC-4E62-B943-F598780146E7}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="JobInvolvement"
+              DTS:DTSID="{BB713B4A-BA22-47EC-B136-CA15C18D62B9}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="JobLevel"
+              DTS:DTSID="{220C813D-9E99-43FB-BAD6-74EE012E0150}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="JobRole"
+              DTS:DTSID="{67B3678C-D9BC-47C5-A0CD-081FDE505C0C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="JobSatisfaction"
+              DTS:DTSID="{85B18790-3965-4EC2-8AB1-002B43A78DEC}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="MaritalStatus"
+              DTS:DTSID="{7E609F16-7150-44B3-92F1-2BF38F762BD1}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="MonthlyIncome"
+              DTS:DTSID="{FF7E90F4-7104-441D-879A-DCD949BF15E5}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="MonthlyRate"
+              DTS:DTSID="{755BBF0C-AC90-45DA-87E3-BB2EE2C90BA5}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="NumCompaniesWorked"
+              DTS:DTSID="{92A7EE29-B140-44A2-AB5A-698A51FFCE84}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Over18"
+              DTS:DTSID="{1D2827CF-8BA6-474F-AE4B-F667F1199273}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="OverTime"
+              DTS:DTSID="{F9381C61-C6DB-4749-98A3-F9E7388547AF}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="PercentSalaryHike"
+              DTS:DTSID="{D91D2132-B563-4455-9C1E-0472A193D09F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="PerformanceRating"
+              DTS:DTSID="{1FC48F37-7D6A-4237-B079-8E0835DEB1AB}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="RelationshipSatisfaction"
+              DTS:DTSID="{78F831CC-47F4-48EB-8EC8-AACC5D00F433}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="StandardHours"
+              DTS:DTSID="{9F59B5C0-21F8-4CD3-910A-EF5D0C3FF00D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="StockOptionLevel"
+              DTS:DTSID="{0F0FA77E-2432-494C-BFF3-91C110B2103B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="TotalWorkingYears"
+              DTS:DTSID="{8342D347-38FB-4957-8BA1-00D92B52A9AC}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="TrainingTimesLastYear"
+              DTS:DTSID="{7002E765-9A81-4E2B-A02A-EFC3C23F491F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="WorkLifeBalance"
+              DTS:DTSID="{3D835A99-C585-4E52-A8A6-2C07632DF4E4}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="YearsAtCompany"
+              DTS:DTSID="{BE058C5B-5772-43E4-B294-CE4BE3693194}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="YearsInCurrentRole"
+              DTS:DTSID="{76112529-C1E8-442E-9853-1CEFE24E32AF}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="YearsSinceLastPromotion"
+              DTS:DTSID="{8E5EE22F-FEC8-4AFA-A10F-332F24FC7B25}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="YearsWithCurrManager&quot;"
+              DTS:DTSID="{3CECB943-0E9D-46E0-AD8E-C2920EB0690E}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Data Flow Task"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{8ED46F52-C711-49AE-ABF2-A42C70696710}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Data Flow Task"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Data Flow Task\HR_data"
+              componentClassID="Microsoft.FlatFileSource"
+              contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Source"
+              localeId="1033"
+              name="HR_data"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether zero-length columns are treated as null."
+                  name="RetainNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of an output column containing the file name. If no name is specified, no output column containing the file name will be generated."
+                  name="FileNameColumnName"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Data Flow Task\HR_data.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Hr_ data]"
+                  connectionManagerRefId="Package.ConnectionManagers[Hr_ data]"
+                  name="FlatFileConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task\HR_data.Outputs[Flat File Source Output]"
+                  name="Flat File Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\HR_data.Outputs[Flat File Source Output].Columns[Age]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\HR_data.Outputs[Flat File Source Output].ExternalColumns[&quot;Age]"
+                      length="50"
+                      lineageId="Package\Data Flow Task\HR_data.Outputs[Flat File Source Output].Columns[Age]"
+                      name="Age"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\HR_data.Outputs[Flat File Source Output].Columns[Attrition]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\HR_data.Outputs[Flat File Source Output].ExternalColumns[Attrition]"
+                      length="50"
+                      lineageId="Package\Data Flow Task\HR_data.Outputs[Flat File Source Output].Columns[Attrition]"
+                      name="Attrition"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\HR_data.Outputs[Flat File Source Output].Columns[BusinessTravel]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\HR_data.Outputs[Flat File Source Output].ExternalColumns[BusinessTravel]"
+                      length="50"
+                      lineageId="Package\Data Flow Task\HR_data.Outputs[Flat File Source Output].Columns[BusinessTravel]"
+                      name="BusinessTravel"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\HR_data.Outputs[Flat File Source Output].Columns[DailyRate]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\HR_data.Outputs[Flat File Source Output].ExternalColumns[DailyRate]"
+                      length="50"
+                      lineageId="Package\Data Flow Task\HR_data.Outputs[Flat File Source Output].Columns[DailyRate]"
+                      name="DailyRate"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\HR_data.Outputs[Flat File Source Output].Columns[Department]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\HR_data.Outputs[Flat File Source Output].ExternalColumns[Department]"
+                      length="50"
+                      lineageId="Package\Data Flow Task\HR_data.Outputs[Flat File Source Output].Columns[Department]"
+                      name="Department"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\HR_data.Outputs[Flat File Source Output].Columns[DistanceFromHome]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\HR_data.Outputs[Flat File Source Output].ExternalColumns[DistanceFromHome]"
+                      length="50"
+                      lineageId="Package\Data Flow Task\HR_data.Outputs[Flat File Source Output].Columns[DistanceFromHome]"
+                      name="DistanceFromHome"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\HR_data.Outputs[Flat File Source Output].Columns[Education]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\HR_data.Outputs[Flat File Source Output].ExternalColumns[Education]"
+                      length="50"
+                      lineageId="Package\Data Flow Task\HR_data.Outputs[Flat File Source Output].Columns[Education]"
+                      name="Education"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\HR_data.Outputs[Flat File Source Output].Columns[EducationField]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\HR_data.Outputs[Flat File Source Output].ExternalColumns[EducationField]"
+                      length="50"
+                      lineageId="Package\Data Flow Task\HR_data.Outputs[Flat File Source Output].Columns[EducationField]"
+                      name="EducationField"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\HR_data.Outputs[Flat File Source Output].Columns[EmployeeCount]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\HR_data.Outputs[Flat File Source Output].ExternalColumns[EmployeeCount]"
+                      length="50"
+                      lineageId="Package\Data Flow Task\HR_data.Outputs[Flat File Source Output].Columns[EmployeeCount]"
+                      name="EmployeeCount"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\HR_data.Outputs[Flat File Source Output].Columns[EmployeeNumber]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\HR_data.Outputs[Flat File Source Output].ExternalColumns[EmployeeNumber]"
+                      length="50"
+                      lineageId="Package\Data Flow Task\HR_data.Outputs[Flat File Source Output].Columns[EmployeeNumber]"
+                      name="EmployeeNumber"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\HR_data.Outputs[Flat File Source Output].Columns[EnvironmentSatisfaction]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\HR_data.Outputs[Flat File Source Output].ExternalColumns[EnvironmentSatisfaction]"
+                      length="50"
+                      lineageId="Package\Data Flow Task\HR_data.Outputs[Flat File Source Output].Columns[EnvironmentSatisfaction]"
+                      name="EnvironmentSatisfaction"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\HR_data.Outputs[Flat File Source Output].Columns[Gender]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\HR_data.Outputs[Flat File Source Output].ExternalColumns[Gender]"
+                      length="50"
+                      lineageId="Package\Data Flow Task\HR_data.Outputs[Flat File Source Output].Columns[Gender]"
+                      name="Gender"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\HR_data.Outputs[Flat File Source Output].Columns[HourlyRate]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\HR_data.Outputs[Flat File Source Output].ExternalColumns[HourlyRate]"
+                      length="50"
+                      lineageId="Package\Data Flow Task\HR_data.Outputs[Flat File Source Output].Columns[HourlyRate]"
+                      name="HourlyRate"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\HR_data.Outputs[Flat File Source Output].Columns[JobInvolvement]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\HR_data.Outputs[Flat File Source Output].ExternalColumns[JobInvolvement]"
+                      length="50"
+                      lineageId="Package\Data Flow Task\HR_data.Outputs[Flat File Source Output].Columns[JobInvolvement]"
+                      name="JobInvolvement"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\HR_data.Outputs[Flat File Source Output].Columns[JobLevel]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\HR_data.Outputs[Flat File Source Output].ExternalColumns[JobLevel]"
+                      length="50"
+                      lineageId="Package\Data Flow Task\HR_data.Outputs[Flat File Source Output].Columns[JobLevel]"
+                      name="JobLevel"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\HR_data.Outputs[Flat File Source Output].Columns[JobRole]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\HR_data.Outputs[Flat File Source Output].ExternalColumns[JobRole]"
+                      length="50"
+                      lineageId="Package\Data Flow Task\HR_data.Outputs[Flat File Source Output].Columns[JobRole]"
+                      name="JobRole"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\HR_data.Outputs[Flat File Source Output].Columns[JobSatisfaction]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\HR_data.Outputs[Flat File Source Output].ExternalColumns[JobSatisfaction]"
+                      length="50"
+                      lineageId="Package\Data Flow Task\HR_data.Outputs[Flat File Source Output].Columns[JobSatisfaction]"
+                      name="JobSatisfaction"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\HR_data.Outputs[Flat File Source Output].Columns[MaritalStatus]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\HR_data.Outputs[Flat File Source Output].ExternalColumns[MaritalStatus]"
+                      length="50"
+                      lineageId="Package\Data Flow Task\HR_data.Outputs[Flat File Source Output].Columns[MaritalStatus]"
+                      name="MaritalStatus"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\HR_data.Outputs[Flat File Source Output].Columns[MonthlyIncome]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\HR_data.Outputs[Flat File Source Output].ExternalColumns[MonthlyIncome]"
+                      length="50"
+                      lineageId="Package\Data Flow Task\HR_data.Outputs[Flat File Source Output].Columns[MonthlyIncome]"
+                      name="MonthlyIncome"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\HR_data.Outputs[Flat File Source Output].Columns[MonthlyRate]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\HR_data.Outputs[Flat File Source Output].ExternalColumns[MonthlyRate]"
+                      length="50"
+                      lineageId="Package\Data Flow Task\HR_data.Outputs[Flat File Source Output].Columns[MonthlyRate]"
+                      name="MonthlyRate"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\HR_data.Outputs[Flat File Source Output].Columns[NumCompaniesWorked]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\HR_data.Outputs[Flat File Source Output].ExternalColumns[NumCompaniesWorked]"
+                      length="50"
+                      lineageId="Package\Data Flow Task\HR_data.Outputs[Flat File Source Output].Columns[NumCompaniesWorked]"
+                      name="NumCompaniesWorked"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\HR_data.Outputs[Flat File Source Output].Columns[Over18]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\HR_data.Outputs[Flat File Source Output].ExternalColumns[Over18]"
+                      length="50"
+                      lineageId="Package\Data Flow Task\HR_data.Outputs[Flat File Source Output].Columns[Over18]"
+                      name="Over18"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\HR_data.Outputs[Flat File Source Output].Columns[OverTime]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\HR_data.Outputs[Flat File Source Output].ExternalColumns[OverTime]"
+                      length="50"
+                      lineageId="Package\Data Flow Task\HR_data.Outputs[Flat File Source Output].Columns[OverTime]"
+                      name="OverTime"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\HR_data.Outputs[Flat File Source Output].Columns[PercentSalaryHike]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\HR_data.Outputs[Flat File Source Output].ExternalColumns[PercentSalaryHike]"
+                      length="50"
+                      lineageId="Package\Data Flow Task\HR_data.Outputs[Flat File Source Output].Columns[PercentSalaryHike]"
+                      name="PercentSalaryHike"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\HR_data.Outputs[Flat File Source Output].Columns[PerformanceRating]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\HR_data.Outputs[Flat File Source Output].ExternalColumns[PerformanceRating]"
+                      length="50"
+                      lineageId="Package\Data Flow Task\HR_data.Outputs[Flat File Source Output].Columns[PerformanceRating]"
+                      name="PerformanceRating"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\HR_data.Outputs[Flat File Source Output].Columns[RelationshipSatisfaction]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\HR_data.Outputs[Flat File Source Output].ExternalColumns[RelationshipSatisfaction]"
+                      length="50"
+                      lineageId="Package\Data Flow Task\HR_data.Outputs[Flat File Source Output].Columns[RelationshipSatisfaction]"
+                      name="RelationshipSatisfaction"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\HR_data.Outputs[Flat File Source Output].Columns[StandardHours]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\HR_data.Outputs[Flat File Source Output].ExternalColumns[StandardHours]"
+                      length="50"
+                      lineageId="Package\Data Flow Task\HR_data.Outputs[Flat File Source Output].Columns[StandardHours]"
+                      name="StandardHours"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\HR_data.Outputs[Flat File Source Output].Columns[StockOptionLevel]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\HR_data.Outputs[Flat File Source Output].ExternalColumns[StockOptionLevel]"
+                      length="50"
+                      lineageId="Package\Data Flow Task\HR_data.Outputs[Flat File Source Output].Columns[StockOptionLevel]"
+                      name="StockOptionLevel"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\HR_data.Outputs[Flat File Source Output].Columns[TotalWorkingYears]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\HR_data.Outputs[Flat File Source Output].ExternalColumns[TotalWorkingYears]"
+                      length="50"
+                      lineageId="Package\Data Flow Task\HR_data.Outputs[Flat File Source Output].Columns[TotalWorkingYears]"
+                      name="TotalWorkingYears"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\HR_data.Outputs[Flat File Source Output].Columns[TrainingTimesLastYear]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\HR_data.Outputs[Flat File Source Output].ExternalColumns[TrainingTimesLastYear]"
+                      length="50"
+                      lineageId="Package\Data Flow Task\HR_data.Outputs[Flat File Source Output].Columns[TrainingTimesLastYear]"
+                      name="TrainingTimesLastYear"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\HR_data.Outputs[Flat File Source Output].Columns[WorkLifeBalance]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\HR_data.Outputs[Flat File Source Output].ExternalColumns[WorkLifeBalance]"
+                      length="50"
+                      lineageId="Package\Data Flow Task\HR_data.Outputs[Flat File Source Output].Columns[WorkLifeBalance]"
+                      name="WorkLifeBalance"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\HR_data.Outputs[Flat File Source Output].Columns[YearsAtCompany]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\HR_data.Outputs[Flat File Source Output].ExternalColumns[YearsAtCompany]"
+                      length="50"
+                      lineageId="Package\Data Flow Task\HR_data.Outputs[Flat File Source Output].Columns[YearsAtCompany]"
+                      name="YearsAtCompany"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\HR_data.Outputs[Flat File Source Output].Columns[YearsInCurrentRole]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\HR_data.Outputs[Flat File Source Output].ExternalColumns[YearsInCurrentRole]"
+                      length="50"
+                      lineageId="Package\Data Flow Task\HR_data.Outputs[Flat File Source Output].Columns[YearsInCurrentRole]"
+                      name="YearsInCurrentRole"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\HR_data.Outputs[Flat File Source Output].Columns[YearsSinceLastPromotion]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\HR_data.Outputs[Flat File Source Output].ExternalColumns[YearsSinceLastPromotion]"
+                      length="50"
+                      lineageId="Package\Data Flow Task\HR_data.Outputs[Flat File Source Output].Columns[YearsSinceLastPromotion]"
+                      name="YearsSinceLastPromotion"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\HR_data.Outputs[Flat File Source Output].Columns[YearsWithCurrManager]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\HR_data.Outputs[Flat File Source Output].ExternalColumns[YearsWithCurrManager&quot;]"
+                      length="50"
+                      lineageId="Package\Data Flow Task\HR_data.Outputs[Flat File Source Output].Columns[YearsWithCurrManager]"
+                      name="YearsWithCurrManager"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\HR_data.Outputs[Flat File Source Output].ExternalColumns[&quot;Age]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="&quot;Age" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\HR_data.Outputs[Flat File Source Output].ExternalColumns[Attrition]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Attrition" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\HR_data.Outputs[Flat File Source Output].ExternalColumns[BusinessTravel]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="BusinessTravel" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\HR_data.Outputs[Flat File Source Output].ExternalColumns[DailyRate]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="DailyRate" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\HR_data.Outputs[Flat File Source Output].ExternalColumns[Department]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Department" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\HR_data.Outputs[Flat File Source Output].ExternalColumns[DistanceFromHome]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="DistanceFromHome" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\HR_data.Outputs[Flat File Source Output].ExternalColumns[Education]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Education" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\HR_data.Outputs[Flat File Source Output].ExternalColumns[EducationField]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="EducationField" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\HR_data.Outputs[Flat File Source Output].ExternalColumns[EmployeeCount]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="EmployeeCount" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\HR_data.Outputs[Flat File Source Output].ExternalColumns[EmployeeNumber]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="EmployeeNumber" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\HR_data.Outputs[Flat File Source Output].ExternalColumns[EnvironmentSatisfaction]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="EnvironmentSatisfaction" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\HR_data.Outputs[Flat File Source Output].ExternalColumns[Gender]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Gender" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\HR_data.Outputs[Flat File Source Output].ExternalColumns[HourlyRate]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="HourlyRate" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\HR_data.Outputs[Flat File Source Output].ExternalColumns[JobInvolvement]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="JobInvolvement" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\HR_data.Outputs[Flat File Source Output].ExternalColumns[JobLevel]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="JobLevel" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\HR_data.Outputs[Flat File Source Output].ExternalColumns[JobRole]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="JobRole" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\HR_data.Outputs[Flat File Source Output].ExternalColumns[JobSatisfaction]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="JobSatisfaction" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\HR_data.Outputs[Flat File Source Output].ExternalColumns[MaritalStatus]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="MaritalStatus" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\HR_data.Outputs[Flat File Source Output].ExternalColumns[MonthlyIncome]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="MonthlyIncome" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\HR_data.Outputs[Flat File Source Output].ExternalColumns[MonthlyRate]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="MonthlyRate" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\HR_data.Outputs[Flat File Source Output].ExternalColumns[NumCompaniesWorked]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="NumCompaniesWorked" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\HR_data.Outputs[Flat File Source Output].ExternalColumns[Over18]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Over18" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\HR_data.Outputs[Flat File Source Output].ExternalColumns[OverTime]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="OverTime" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\HR_data.Outputs[Flat File Source Output].ExternalColumns[PercentSalaryHike]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="PercentSalaryHike" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\HR_data.Outputs[Flat File Source Output].ExternalColumns[PerformanceRating]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="PerformanceRating" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\HR_data.Outputs[Flat File Source Output].ExternalColumns[RelationshipSatisfaction]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="RelationshipSatisfaction" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\HR_data.Outputs[Flat File Source Output].ExternalColumns[StandardHours]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="StandardHours" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\HR_data.Outputs[Flat File Source Output].ExternalColumns[StockOptionLevel]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="StockOptionLevel" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\HR_data.Outputs[Flat File Source Output].ExternalColumns[TotalWorkingYears]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="TotalWorkingYears" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\HR_data.Outputs[Flat File Source Output].ExternalColumns[TrainingTimesLastYear]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="TrainingTimesLastYear" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\HR_data.Outputs[Flat File Source Output].ExternalColumns[WorkLifeBalance]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="WorkLifeBalance" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\HR_data.Outputs[Flat File Source Output].ExternalColumns[YearsAtCompany]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="YearsAtCompany" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\HR_data.Outputs[Flat File Source Output].ExternalColumns[YearsInCurrentRole]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="YearsInCurrentRole" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\HR_data.Outputs[Flat File Source Output].ExternalColumns[YearsSinceLastPromotion]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="YearsSinceLastPromotion" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\HR_data.Outputs[Flat File Source Output].ExternalColumns[YearsWithCurrManager&quot;]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="YearsWithCurrManager&quot;" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Data Flow Task\HR_data.Outputs[Flat File Source Error Output]"
+                  isErrorOut="true"
+                  name="Flat File Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\HR_data.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      codePage="1252"
+                      dataType="text"
+                      description="Flat File Source Error Output Column"
+                      lineageId="Package\Data Flow Task\HR_data.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      name="Flat File Source Error Output Column" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\HR_data.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\HR_data.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\HR_data.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\HR_data.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Data Flow Task\OLE DB Destination"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="OLE DB Destination"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[HR_data]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Data Flow Task\OLE DB Destination.Connections[OleDbConnection]"
+                  connectionManagerID="{98AA7844-F7F3-4853-9146-8AE7A24F4CC5}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[DESKTOP-GEIGN2C.DB_EPKO]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Age]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Age"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Age]"
+                      lineageId="Package\Data Flow Task\HR_data.Outputs[Flat File Source Output].Columns[Age]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Attrition]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Attrition"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Attrition]"
+                      lineageId="Package\Data Flow Task\HR_data.Outputs[Flat File Source Output].Columns[Attrition]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[BusinessTravel]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="BusinessTravel"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[BusinessTravel]"
+                      lineageId="Package\Data Flow Task\HR_data.Outputs[Flat File Source Output].Columns[BusinessTravel]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[DailyRate]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="DailyRate"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DailyRate]"
+                      lineageId="Package\Data Flow Task\HR_data.Outputs[Flat File Source Output].Columns[DailyRate]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Department]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Department"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Department]"
+                      lineageId="Package\Data Flow Task\HR_data.Outputs[Flat File Source Output].Columns[Department]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[DistanceFromHome]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="DistanceFromHome"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DistanceFromHome]"
+                      lineageId="Package\Data Flow Task\HR_data.Outputs[Flat File Source Output].Columns[DistanceFromHome]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Education]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Education"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Education]"
+                      lineageId="Package\Data Flow Task\HR_data.Outputs[Flat File Source Output].Columns[Education]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[EducationField]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="EducationField"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[EducationField]"
+                      lineageId="Package\Data Flow Task\HR_data.Outputs[Flat File Source Output].Columns[EducationField]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[EmployeeCount]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="EmployeeCount"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[EmployeeCount]"
+                      lineageId="Package\Data Flow Task\HR_data.Outputs[Flat File Source Output].Columns[EmployeeCount]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[EmployeeNumber]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="EmployeeNumber"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[EmployeeNumber]"
+                      lineageId="Package\Data Flow Task\HR_data.Outputs[Flat File Source Output].Columns[EmployeeNumber]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[EnvironmentSatisfaction]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="EnvironmentSatisfaction"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[EnvironmentSatisfaction]"
+                      lineageId="Package\Data Flow Task\HR_data.Outputs[Flat File Source Output].Columns[EnvironmentSatisfaction]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Gender]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Gender"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Gender]"
+                      lineageId="Package\Data Flow Task\HR_data.Outputs[Flat File Source Output].Columns[Gender]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[HourlyRate]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="HourlyRate"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[HourlyRate]"
+                      lineageId="Package\Data Flow Task\HR_data.Outputs[Flat File Source Output].Columns[HourlyRate]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[JobInvolvement]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="JobInvolvement"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[JobInvolvement]"
+                      lineageId="Package\Data Flow Task\HR_data.Outputs[Flat File Source Output].Columns[JobInvolvement]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[JobLevel]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="JobLevel"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[JobLevel]"
+                      lineageId="Package\Data Flow Task\HR_data.Outputs[Flat File Source Output].Columns[JobLevel]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[JobRole]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="JobRole"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[JobRole]"
+                      lineageId="Package\Data Flow Task\HR_data.Outputs[Flat File Source Output].Columns[JobRole]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[JobSatisfaction]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="JobSatisfaction"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[JobSatisfaction]"
+                      lineageId="Package\Data Flow Task\HR_data.Outputs[Flat File Source Output].Columns[JobSatisfaction]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[MaritalStatus]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="MaritalStatus"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[MaritalStatus]"
+                      lineageId="Package\Data Flow Task\HR_data.Outputs[Flat File Source Output].Columns[MaritalStatus]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[MonthlyIncome]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="MonthlyIncome"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[MonthlyIncome]"
+                      lineageId="Package\Data Flow Task\HR_data.Outputs[Flat File Source Output].Columns[MonthlyIncome]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[MonthlyRate]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="MonthlyRate"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[MonthlyRate]"
+                      lineageId="Package\Data Flow Task\HR_data.Outputs[Flat File Source Output].Columns[MonthlyRate]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[NumCompaniesWorked]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="NumCompaniesWorked"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[NumCompaniesWorked]"
+                      lineageId="Package\Data Flow Task\HR_data.Outputs[Flat File Source Output].Columns[NumCompaniesWorked]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Over18]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Over18"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Over18]"
+                      lineageId="Package\Data Flow Task\HR_data.Outputs[Flat File Source Output].Columns[Over18]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[OverTime]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="OverTime"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[OverTime]"
+                      lineageId="Package\Data Flow Task\HR_data.Outputs[Flat File Source Output].Columns[OverTime]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[PercentSalaryHike]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="PercentSalaryHike"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PercentSalaryHike]"
+                      lineageId="Package\Data Flow Task\HR_data.Outputs[Flat File Source Output].Columns[PercentSalaryHike]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[PerformanceRating]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="PerformanceRating"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PerformanceRating]"
+                      lineageId="Package\Data Flow Task\HR_data.Outputs[Flat File Source Output].Columns[PerformanceRating]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[RelationshipSatisfaction]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="RelationshipSatisfaction"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[RelationshipSatisfaction]"
+                      lineageId="Package\Data Flow Task\HR_data.Outputs[Flat File Source Output].Columns[RelationshipSatisfaction]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[StandardHours]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="StandardHours"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[StandardHours]"
+                      lineageId="Package\Data Flow Task\HR_data.Outputs[Flat File Source Output].Columns[StandardHours]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[StockOptionLevel]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="StockOptionLevel"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[StockOptionLevel]"
+                      lineageId="Package\Data Flow Task\HR_data.Outputs[Flat File Source Output].Columns[StockOptionLevel]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[TotalWorkingYears]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="TotalWorkingYears"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TotalWorkingYears]"
+                      lineageId="Package\Data Flow Task\HR_data.Outputs[Flat File Source Output].Columns[TotalWorkingYears]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[TrainingTimesLastYear]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="TrainingTimesLastYear"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TrainingTimesLastYear]"
+                      lineageId="Package\Data Flow Task\HR_data.Outputs[Flat File Source Output].Columns[TrainingTimesLastYear]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[WorkLifeBalance]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="WorkLifeBalance"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[WorkLifeBalance]"
+                      lineageId="Package\Data Flow Task\HR_data.Outputs[Flat File Source Output].Columns[WorkLifeBalance]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[YearsAtCompany]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="YearsAtCompany"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[YearsAtCompany]"
+                      lineageId="Package\Data Flow Task\HR_data.Outputs[Flat File Source Output].Columns[YearsAtCompany]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[YearsInCurrentRole]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="YearsInCurrentRole"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[YearsInCurrentRole]"
+                      lineageId="Package\Data Flow Task\HR_data.Outputs[Flat File Source Output].Columns[YearsInCurrentRole]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[YearsSinceLastPromotion]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="YearsSinceLastPromotion"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[YearsSinceLastPromotion]"
+                      lineageId="Package\Data Flow Task\HR_data.Outputs[Flat File Source Output].Columns[YearsSinceLastPromotion]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[YearsWithCurrManager]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="YearsWithCurrManager"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[YearsWithCurrManager]"
+                      lineageId="Package\Data Flow Task\HR_data.Outputs[Flat File Source Output].Columns[YearsWithCurrManager]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Age]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Age" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Attrition]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Attrition" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[BusinessTravel]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="BusinessTravel" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DailyRate]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="DailyRate" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Department]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Department" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DistanceFromHome]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="DistanceFromHome" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Education]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Education" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[EducationField]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="EducationField" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[EmployeeCount]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="EmployeeCount" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[EmployeeNumber]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="EmployeeNumber" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[EnvironmentSatisfaction]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="EnvironmentSatisfaction" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Gender]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Gender" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[HourlyRate]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="HourlyRate" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[JobInvolvement]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="JobInvolvement" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[JobLevel]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="JobLevel" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[JobRole]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="JobRole" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[JobSatisfaction]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="JobSatisfaction" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[MaritalStatus]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="MaritalStatus" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[MonthlyIncome]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="MonthlyIncome" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[MonthlyRate]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="MonthlyRate" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[NumCompaniesWorked]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="NumCompaniesWorked" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Over18]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Over18" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[OverTime]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="OverTime" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PercentSalaryHike]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="PercentSalaryHike" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PerformanceRating]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="PerformanceRating" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[RelationshipSatisfaction]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="RelationshipSatisfaction" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[StandardHours]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="StandardHours" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[StockOptionLevel]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="StockOptionLevel" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TotalWorkingYears]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="TotalWorkingYears" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TrainingTimesLastYear]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="TrainingTimesLastYear" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[WorkLifeBalance]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="WorkLifeBalance" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[YearsAtCompany]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="YearsAtCompany" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[YearsInCurrentRole]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="YearsInCurrentRole" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[YearsSinceLastPromotion]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="YearsSinceLastPromotion" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[YearsWithCurrManager]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="YearsWithCurrManager" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Data Flow Task.Paths[Flat File Source Output]"
+              endId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input]"
+              name="Flat File Source Output"
+              startId="Package\Data Flow Task\HR_data.Outputs[Flat File Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="152,42.6666666666667"
+          Id="Package\Data Flow Task"
+          TopLeft="61.2499972619117,42.8999979543687" />
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\Data Flow Task">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="172,42.6666666666667"
+          Id="Package\Data Flow Task\OLE DB Destination"
+          TopLeft="199.374991087243,197.599990577698" />
+        <NodeLayout
+          Size="120,42.6666666666667"
+          Id="Package\Data Flow Task\HR_data"
+          TopLeft="186.249991673977,22.0999989461899" />
+        <EdgeLayout
+          Id="Package\Data Flow Task.Paths[Flat File Source Output]"
+          TopLeft="246.249991673977,64.7666656128566">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="39.124999413266,132.833324964841"
+              Start="0,0"
+              End="39.124999413266,125.333324964841">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,62.4166624824207" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,62.4166624824207"
+                    Point2="0,66.4166624824207"
+                    Point3="4,66.4166624824207" />
+                  <mssgle:LineSegment
+                    End="35.124999413266,66.4166624824207" />
+                  <mssgle:CubicBezierSegment
+                    Point1="35.124999413266,66.4166624824207"
+                    Point2="39.124999413266,66.4166624824207"
+                    Point3="39.124999413266,70.4166624824207" />
+                  <mssgle:LineSegment
+                    End="39.124999413266,125.333324964841" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Data Flow Task\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>
